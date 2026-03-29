@@ -2074,7 +2074,7 @@ function FloorplanGuideHandleHint({
             rotationModifierPressed ? 'opacity-40' : 'opacity-100',
           )}
         >
-          <span className="font-medium text-[11px] lowercase leading-none">resize</span>
+          <span className="font-medium text-[11px] lowercase leading-none">调整大小</span>
           <Icon
             aria-hidden="true"
             className="h-3.5 w-3.5 shrink-0"
@@ -2089,7 +2089,7 @@ function FloorplanGuideHandleHint({
             rotationModifierPressed ? 'opacity-100' : 'opacity-40',
           )}
         >
-          <span className="font-medium text-[11px] lowercase leading-none">rotate</span>
+          <span className="font-medium text-[11px] lowercase leading-none">旋转</span>
           {isMacPlatform ? (
             <Command aria-hidden="true" className="h-3.5 w-3.5 shrink-0" strokeWidth={2.2} />
           ) : (
@@ -7087,7 +7087,7 @@ export function FloorplanPanel() {
                     </div>
                   ) : (
                     <div className="rounded-xl border border-border/45 border-dashed bg-background/60 px-3 py-4 text-muted-foreground text-sm">
-                      No guide images on this level yet.
+                      该层级暂无引导图片。
                     </div>
                   )}
                 </div>
@@ -7164,7 +7164,7 @@ export function FloorplanPanel() {
                 </button>
               </TooltipTrigger>
               <TooltipContent side="bottom" sideOffset={8}>
-                Click select
+                点击选择工具
               </TooltipContent>
             </Tooltip>
 
@@ -7186,7 +7186,7 @@ export function FloorplanPanel() {
                 </button>
               </TooltipTrigger>
               <TooltipContent side="bottom" sideOffset={8}>
-                Box select
+                矩形选择工具
               </TooltipContent>
             </Tooltip>
           </div>
@@ -7203,7 +7203,7 @@ export function FloorplanPanel() {
               </button>
             </TooltipTrigger>
             <TooltipContent side="bottom" sideOffset={8}>
-              Close floorplan
+              关闭楼层图
             </TooltipContent>
           </Tooltip>
         </div>
@@ -7267,7 +7267,7 @@ export function FloorplanPanel() {
 
         {!levelNode || levelNode.type !== 'level' ? (
           <div className="flex h-full items-center justify-center px-6 text-center text-muted-foreground text-sm">
-            Switch to a building level to view and edit the floorplan.
+            切换到建筑楼层以查看和编辑楼层图。
           </div>
         ) : (
           <svg

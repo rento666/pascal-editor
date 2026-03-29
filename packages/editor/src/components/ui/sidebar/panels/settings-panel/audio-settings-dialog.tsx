@@ -90,7 +90,7 @@ export function AudioSettingsDialog() {
               variant={muted ? 'default' : 'outline'}
             >
               {muted ? <VolumeX className="size-4" /> : <Volume2 className="size-4" />}
-              {muted ? 'Unmute All Sounds' : 'Mute All Sounds'}
+              {muted ? '取消静音' : '静音'}
             </Button>
           </div>
         </div>

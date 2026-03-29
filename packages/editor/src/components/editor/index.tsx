@@ -138,17 +138,17 @@ type CameraControlHint = {
 
 const EDITOR_CAMERA_CONTROL_HINTS: CameraControlHint[] = [
   {
-    action: 'Pan',
+    action: '平移',
     keys: [{ value: 'Space' }, { value: 'Left click' }],
   },
-  { action: 'Rotate', keys: [{ value: 'Right click' }] },
-  { action: 'Zoom', keys: [{ value: 'Scroll' }] },
+  { action: '旋转', keys: [{ value: 'Right click' }] },
+  { action: '缩放', keys: [{ value: 'Scroll' }] },
 ]
 
 const PREVIEW_CAMERA_CONTROL_HINTS: CameraControlHint[] = [
-  { action: 'Pan', keys: [{ value: 'Left click' }] },
-  { action: 'Rotate', keys: [{ value: 'Right click' }] },
-  { action: 'Zoom', keys: [{ value: 'Scroll' }] },
+  { action: '平移', keys: [{ value: 'Left click' }] },
+  { action: '旋转', keys: [{ value: 'Right click' }] },
+  { action: '缩放', keys: [{ value: 'Scroll' }] },
 ]
 
 const CAMERA_SHORTCUT_KEY_META: Record<string, { icon?: string; label: string; text?: string }> = {
