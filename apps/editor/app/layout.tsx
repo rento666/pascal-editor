@@ -1,6 +1,7 @@
 import { Agentation } from 'agentation'
 import { GeistPixelSquare } from 'geist/font/pixel'
 import { Barlow } from 'next/font/google'
+import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import Script from 'next/script'
 import './globals.css'
@@ -20,6 +21,11 @@ const barlow = Barlow({
   variable: '--font-barlow',
   display: 'swap',
 })
+
+export const metadata: Metadata = {
+  title: '在线房屋设计 | 彩虹兔',
+  description: '专业的在线房屋设计工具|支持3D模型编辑|实时预览|多层级设计|自定义组件|批量导出|别墅设计',
+}
 
 export default function RootLayout({
   children,
