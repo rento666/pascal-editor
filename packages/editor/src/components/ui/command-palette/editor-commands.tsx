@@ -69,7 +69,7 @@ export function EditorCommands() {
       // ── Scene ────────────────────────────────────────────────────────────
       {
         id: 'editor.tool.wall',
-        label: 'Wall Tool',
+        label: '墙壁工具',
         group: 'Scene',
         icon: <Square className="h-4 w-4" />,
         keywords: ['draw', 'build', 'structure'],
@@ -77,7 +77,7 @@ export function EditorCommands() {
       },
       {
         id: 'editor.tool.slab',
-        label: 'Slab Tool',
+        label: '地板工具',
         group: 'Scene',
         icon: <Layers className="h-4 w-4" />,
         keywords: ['floor', 'build'],
@@ -85,7 +85,7 @@ export function EditorCommands() {
       },
       {
         id: 'editor.tool.ceiling',
-        label: 'Ceiling Tool',
+        label: '天花板工具',
         group: 'Scene',
         icon: <Grid3X3 className="h-4 w-4" />,
         keywords: ['top', 'build'],
@@ -93,7 +93,7 @@ export function EditorCommands() {
       },
       {
         id: 'editor.tool.door',
-        label: 'Door Tool',
+        label: '门工具',
         group: 'Scene',
         icon: <DoorOpen className="h-4 w-4" />,
         keywords: ['opening', 'entrance'],
@@ -101,7 +101,7 @@ export function EditorCommands() {
       },
       {
         id: 'editor.tool.window',
-        label: 'Window Tool',
+        label: '窗户工具',
         group: 'Scene',
         icon: <AppWindow className="h-4 w-4" />,
         keywords: ['opening', 'glass'],
@@ -109,7 +109,7 @@ export function EditorCommands() {
       },
       {
         id: 'editor.tool.item',
-        label: 'Item Tool',
+        label: '物品工具',
         group: 'Scene',
         icon: <Package className="h-4 w-4" />,
         keywords: ['furniture', 'object', 'asset', 'furnish'],
@@ -117,7 +117,7 @@ export function EditorCommands() {
       },
       {
         id: 'editor.tool.zone',
-        label: 'Zone Tool',
+        label: '区域工具',
         group: 'Scene',
         icon: <Hexagon className="h-4 w-4" />,
         keywords: ['area', 'room', 'space'],
@@ -125,7 +125,7 @@ export function EditorCommands() {
       },
       {
         id: 'editor.delete-selection',
-        label: 'Delete Selection',
+        label: '删除选中项',
         group: 'Scene',
         icon: <Trash2 className="h-4 w-4" />,
         keywords: ['remove', 'erase'],
@@ -141,7 +141,7 @@ export function EditorCommands() {
       // ── Levels ───────────────────────────────────────────────────────────
       {
         id: 'editor.level.goto',
-        label: 'Go to Level',
+        label: '前往楼层',
         group: 'Levels',
         icon: <ArrowRight className="h-4 w-4" />,
         keywords: ['level', 'floor', 'go', 'navigate', 'switch', 'select'],
@@ -151,7 +151,7 @@ export function EditorCommands() {
       },
       {
         id: 'editor.level.add',
-        label: 'Add Level',
+        label: '添加楼层',
         group: 'Levels',
         icon: <Plus className="h-4 w-4" />,
         keywords: ['level', 'floor', 'add', 'create', 'new'],
@@ -171,7 +171,7 @@ export function EditorCommands() {
       },
       {
         id: 'editor.level.rename',
-        label: 'Rename Level',
+        label: '重命名楼层',
         group: 'Levels',
         icon: <PencilLine className="h-4 w-4" />,
         keywords: ['level', 'floor', 'rename', 'name'],
@@ -187,7 +187,7 @@ export function EditorCommands() {
       },
       {
         id: 'editor.level.delete',
-        label: 'Delete Level',
+        label: '删除楼层',
         group: 'Levels',
         icon: <Trash2 className="h-4 w-4" />,
         keywords: ['level', 'floor', 'delete', 'remove'],
@@ -208,7 +208,7 @@ export function EditorCommands() {
       // ── Viewer Controls ──────────────────────────────────────────────────
       {
         id: 'editor.viewer.wall-mode',
-        label: 'Wall Mode',
+        label: '墙模式',
         group: 'Viewer Controls',
         icon: <Layers className="h-4 w-4" />,
         keywords: ['wall', 'cutaway', 'up', 'down', 'view'],
@@ -221,7 +221,7 @@ export function EditorCommands() {
       },
       {
         id: 'editor.viewer.level-mode',
-        label: 'Level Mode',
+        label: '楼层模式',
         group: 'Viewer Controls',
         icon: <SquareStack className="h-4 w-4" />,
         keywords: ['level', 'floor', 'exploded', 'stacked', 'solo'],
@@ -236,7 +236,7 @@ export function EditorCommands() {
         id: 'editor.viewer.camera-mode',
         label: () => {
           const mode = useViewer.getState().cameraMode
-          return `Camera: Switch to ${mode === 'perspective' ? 'Orthographic' : 'Perspective'}`
+          return `切换到 ${mode === 'perspective' ? '正交相机' : '透视相机'}`
         },
         group: 'Viewer Controls',
         icon: <Video className="h-4 w-4" />,
@@ -251,7 +251,7 @@ export function EditorCommands() {
         id: 'editor.viewer.theme',
         label: () => {
           const theme = useViewer.getState().theme
-          return theme === 'dark' ? 'Switch to Light Theme' : 'Switch to Dark Theme'
+          return theme === 'dark' ? '切换到亮色主题' : '切换到暗色主题'
         },
         group: 'Viewer Controls',
         icon: <Sun className="h-4 w-4" />, // icon is static; label conveys the action
@@ -264,7 +264,7 @@ export function EditorCommands() {
       },
       {
         id: 'editor.viewer.camera-snapshot',
-        label: 'Camera Snapshot',
+        label: '相机快照',
         group: 'Viewer Controls',
         icon: <Camera className="h-4 w-4" />,
         keywords: ['camera', 'snapshot', 'capture', 'save', 'view', 'bookmark'],
@@ -275,7 +275,7 @@ export function EditorCommands() {
       // ── View ─────────────────────────────────────────────────────────────
       {
         id: 'editor.view.preview',
-        label: () => (isPreviewMode ? 'Exit Preview' : 'Enter Preview'),
+        label: () => (isPreviewMode ? '退出预览' : '进入预览'),
         group: 'View',
         icon: isPreviewMode ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />,
         keywords: ['preview', 'view', 'read-only', 'present'],
@@ -283,7 +283,7 @@ export function EditorCommands() {
       },
       {
         id: 'editor.view.fullscreen',
-        label: 'Toggle Fullscreen',
+        label: '切换全屏模式',
         group: 'View',
         icon: <Maximize2 className="h-4 w-4" />,
         keywords: ['fullscreen', 'maximize', 'expand', 'window'],
@@ -297,7 +297,7 @@ export function EditorCommands() {
       // ── History ──────────────────────────────────────────────────────────
       {
         id: 'editor.history.undo',
-        label: 'Undo',
+        label: '撤销',
         group: 'History',
         icon: <Undo2 className="h-4 w-4" />,
         keywords: ['undo', 'revert', 'back'],
@@ -305,7 +305,7 @@ export function EditorCommands() {
       },
       {
         id: 'editor.history.redo',
-        label: 'Redo',
+        label: '重做',
         group: 'History',
         icon: <Redo2 className="h-4 w-4" />,
         keywords: ['redo', 'forward', 'repeat'],
@@ -315,7 +315,7 @@ export function EditorCommands() {
       // ── Export & Share ───────────────────────────────────────────────────
       {
         id: 'editor.export.json',
-        label: 'Export Scene (JSON)',
+        label: '导出JSON场景',
         group: 'Export & Share',
         icon: <FileJson className="h-4 w-4" />,
         keywords: ['export', 'download', 'json', 'save', 'data'],
@@ -337,7 +337,7 @@ export function EditorCommands() {
         ? [
             {
               id: 'editor.export.glb',
-              label: 'Export 3D Model (GLB)',
+              label: '导出3D模型（GLB）',
               group: 'Export & Share',
               icon: <Box className="h-4 w-4" />,
               keywords: ['export', 'glb', 'gltf', '3d', 'model', 'download'],
@@ -347,7 +347,7 @@ export function EditorCommands() {
         : []),
       {
         id: 'editor.export.share-link',
-        label: 'Copy Share Link',
+        label: '复制分享链接',
         group: 'Export & Share',
         icon: <Copy className="h-4 w-4" />,
         keywords: ['share', 'copy', 'url', 'link'],
@@ -355,7 +355,7 @@ export function EditorCommands() {
       },
       {
         id: 'editor.export.screenshot',
-        label: 'Take Screenshot',
+        label: '截图保存',
         group: 'Export & Share',
         icon: <Camera className="h-4 w-4" />,
         keywords: ['screenshot', 'capture', 'image', 'photo', 'png'],

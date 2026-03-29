@@ -139,7 +139,7 @@ function PropertyLineSection() {
 
         <div className="flex items-center gap-2">
           <Pentagon className="h-4 w-4 text-muted-foreground" />
-          <span className="font-medium text-sm">Property Line</span>
+          <span className="font-medium text-sm">属性线</span>
         </div>
         <button
           className={cn(
@@ -157,10 +157,10 @@ function PropertyLineSection() {
       {/* Measurements */}
       <div className="relative flex gap-3 pr-3 pb-2 pl-10">
         <div className="text-muted-foreground text-xs">
-          Area: <span className="text-foreground">{area.toFixed(1)} m²</span>
+          面积: <span className="text-foreground">{area.toFixed(1)} m²</span>
         </div>
         <div className="text-muted-foreground text-xs">
-          Perimeter: <span className="text-foreground">{perimeter.toFixed(1)} m</span>
+          周长: <span className="text-foreground">{perimeter.toFixed(1)} m</span>
         </div>
       </div>
 
@@ -271,7 +271,7 @@ function CameraPopover({
               }}
             >
               <Camera className="h-3.5 w-3.5" />
-              View snapshot
+              查看截图
             </button>
           )}
           <button
@@ -283,7 +283,7 @@ function CameraPopover({
             }}
           >
             <Camera className="h-3.5 w-3.5" />
-            {hasCamera ? 'Update snapshot' : 'Take snapshot'}
+            {hasCamera ? '更新截图' : '截图保存'}
           </button>
           {hasCamera && (
             <button
@@ -295,7 +295,7 @@ function CameraPopover({
               }}
             >
               <Trash2 className="h-3.5 w-3.5" />
-              Clear snapshot
+              清除截图
             </button>
           )}
         </div>
